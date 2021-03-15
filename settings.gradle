@@ -1,0 +1,10 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        jcenter()
+    }
+}
+rootProject.name = "SpeedTest5G"
+include ':app'
+include ':jspeedtest'

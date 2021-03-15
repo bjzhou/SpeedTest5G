@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    api 'fr.bmartel:http-endec:1.04'
+    api 'commons-net:commons-net:3.6'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'net.jodah:concurrentunit:0.4.2'
+    testImplementation 'com.googlecode.json-simple:json-simple:1.1.1'
+    testImplementation 'com.google.code.gson:gson:2.8.6'
+}

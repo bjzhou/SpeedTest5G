@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SpeedTest5G</string>
+    <string name="none">None</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="mobile">Mobile</string>
+    <string name="unknown">Unknown</string>
+    <string name="choosing_server">Choosing best server...</string>
+    <string name="change_server">change test server</string>
+</resources>
